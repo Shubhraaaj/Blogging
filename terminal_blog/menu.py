@@ -17,7 +17,7 @@ class Menu(object):
     def _user_has_account(self):
         blog = Database.find_one('blogs', {'author': self.user})
         if blog is not None:
-            self.user_blog = blog
+            self.user_blog = Blog.get_from_mongo(blog['id'])
             return True
         else:
             return False
@@ -61,6 +61,6 @@ class Menu(object):
         blog = Blog.get_from_mongo(blog_to_see)
         posts = blog.get_posts()
         for post in posts:
-            print("Date: {}, Title: {}\n\n{}".format(post['created_date'], post['title'], post['content']))
+            print("Date: {}, Title: {}\n{}\n".format(post['created_date'], post['title'], post['content']))
 
 

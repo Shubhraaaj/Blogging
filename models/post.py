@@ -28,12 +28,12 @@ class Post(object):
 
     @classmethod
     def from_mongo(cls, id):
-       postdata = Database.find_one(collecion = 'posts', query = {'id': id})
+       postdata = Database.find_one(collection = 'posts', query = {'id': id})
        return cls(blog_id=postdata['blog_id'],
                   title=postdata['title'],
                   content=postdata['content'],
                   author=postdata['author'],
-                  date=postdata['created_date'],
+                  created_date=postdata['created_date'],
                   id=postdata['id'])
 
     @staticmethod

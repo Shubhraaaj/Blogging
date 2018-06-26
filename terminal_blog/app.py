@@ -31,6 +31,7 @@ menu = Menu()
 def exit_status():
     status = input("Do you want to exit the application (Y/N): ");
     if status == "Y":
+        print("Thank you for Blogging!")
         exit(0)
     elif status == "N":
         return True
