@@ -1,0 +1,14 @@
+Hello Programmer, Welcome to Python!
+
+Name: Shubhraj Prasad Singh
+Age: 22
+
+Name: Ankeeta Singh
+Age: 19
+
+Name: Sanjay Prasad Singh
+Age: 58
+
+Name: Krishna Singh
+Age: 50
+
