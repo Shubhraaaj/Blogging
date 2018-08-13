@@ -23,7 +23,7 @@ application has UI and other customerisations
 ## Getting started
 The app is built in Python3 and coded using PyCharm IDE. To run this app, You just need to 
 run it as a simple python program. The app will automatically detect the users and posts. Make 
-sure you have MongoDB installed and running in your system.
+sure you have MongoDB installed and running in your system. And then open your web browser to a localhost.
 
 ## License
 <p> Copyright 2016 The Android Open Source Project, Inc.<br>
